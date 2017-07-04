@@ -39,6 +39,8 @@ gem 'font-awesome-rails'
 
 gem 'simple_form'
 gem 'bootstrap-datepicker-rails'
+
+gem 'stamp'
 # end our gems!!!!!!!!!!!
 
 group :development, :test do

@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<h1>a nice to-do list</h1>
+
+<br>
+<%= link_to new_user_task_path, remote: true do %>
+  <button class="btn btn-default add-task"><%= fa_icon "plus" %> new task</button>
+<% end %>
+
+<br>
+<br>
+
+<div id="task-form">
+</div>
+
+<br>
+<br>
+
+<div id="tasks">
+  <%= render @user_tasks %>
+</div>
+
+

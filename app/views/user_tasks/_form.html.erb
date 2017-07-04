@@ -1,0 +1,12 @@
+<%= simple_form_for(@user_task, remote: true) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :description, as: :text, placeholder: "make groceries" %>
+    <%= f.input :due, as: :string, placeholder: "today" %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
