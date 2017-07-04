@@ -1,4 +1,8 @@
 <div class="well">
   <%= user_task.description %>
-  <%= user_task.due %>
+  <br><%= user_task.due %>
+
+  <%= link_to 'edit', edit_user_task_path(user_task), remote: true %>
+  <%= link_to 'delete', user_task, remote: true, method: :delete, data: {confirm: 'are you sure?' } %>
+
 </div>
