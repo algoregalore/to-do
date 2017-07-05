@@ -26,12 +26,23 @@ h1 {
   background-color: #fff;
 }
 
+#sign-in {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 20px 20px 20px 20px;
+  background-color: #fff;
+}
+
 body {
-    background-image: url("clouds.jpg");
+    background-image: url("mem.png");
+    background-attachment: fixed;
 }
 
 a {
   color: #000;
+  background-color: #9c79fc;
+  padding: 3px;
+  border-radius: 3px;
 }
 
 a:hover {
@@ -42,6 +53,18 @@ a:hover {
 a:active {
   color: #000;
   text-decoration: none;
+}
+
+.create {
+  background-color: #9c79fc;
+  padding: 2px;
+  border-radius: 3px;
+}.create:hover {
+    background-color: #9c79fc;
+    color: #fff;
+}.create:active {
+    background-color: #9c79fc;
+    color: #fff;
 }
 
 .individual-task {

@@ -2,6 +2,8 @@
 
   <%= user_task.description  %>
 
-  <br>[ Due <%= user_task.due.stamp("Jan 1, 1999") %> | <%= link_to fa_icon('pencil'), edit_user_task_path(user_task), remote: true %> | <%= link_to fa_icon('trash'), user_task, remote: true, method: :delete, data: {confirm: 'delete task?' } %> ]
+  <br>
+  <p style='text-align:left'><small>Due <%= user_task.due.stamp("Jan 1, 1999") %>
+  <span style='float:right'><%= link_to fa_icon('pencil'), edit_user_task_path(user_task), remote: true %> <%= link_to fa_icon('trash'), user_task, remote: true, method: :delete, data: {confirm: 'delete task?' } %></span></small></p>
 
 </div>

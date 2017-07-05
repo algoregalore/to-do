@@ -7,9 +7,7 @@
       <div id="topper">
         <h1>a nice to-do list</h1>
 
-        <%= link_to new_user_task_path, remote: true do %>
-          <center><%= fa_icon "plus" %> add new task</center>
-        <% end %>
+        <center><%= link_to new_user_task_path, remote: true do %><%= fa_icon "plus" %> add new task <% end %></center>
       </div>
 
       <div id="task-form">
