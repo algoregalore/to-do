@@ -3,13 +3,52 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #task-form {
-  display: none
+  display: none;
+  margin: 20px;
+}
+
+#topper{
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 20px 20px 20px 20px;
+  background-color: #fff;
+}
+
+h1 {
+  text-align: center;
+}
+
+#form {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 20px 20px 20px 20px;
+  background-color: #fff;
+}
+
+body {
+    background-image: url("clouds.jpg");
+}
+
+a {
+  color: #000;
 }
 
 a:hover {
   text-decoration: none;
+  color: #FFF;
 }
 
-.well a:hover{
-  text-decoration: line-through;
+a:active {
+  color: #000;
+  text-decoration: none;
 }
+
+.individual-task {
+  border: 1px solid black;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 20px 20px 20px 20px;
+  background-color: #fff;
+}
+
