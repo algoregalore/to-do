@@ -1,6 +1,6 @@
 class User < ApplicationRecord
 
-  # get the stuff from FB and make a user
+  # Get the stuff from Facebook and make a user
   def self.create_with_omniauth(auth)
     create! do |user|
       user.provider = auth['provider']
@@ -9,13 +9,12 @@ class User < ApplicationRecord
     end
   end
 
-  # grab their fb profile pic
+  # Grab their Facebook Profile Picture
   def small_image
     "http://graph.facebook.com/#{self.uid}/picture?type=small"
   end
 
   def normal_image
-    "http://graph.facebook.com/#{self.uid}/picture?type=small"
+    "http://graph.facebook.com/#{self.uid}/picture?type=normal"
   end
-
 end
