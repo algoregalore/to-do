@@ -41,6 +41,10 @@ gem 'simple_form'
 gem 'bootstrap-datepicker-rails'
 
 gem 'stamp'
+
+gem 'omniauth-facebook'
+gem 'figaro'
+
 # end our gems!!!!!!!!!!!
 
 group :development, :test do
