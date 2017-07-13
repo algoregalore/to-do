@@ -15,4 +15,3 @@
 //= require bootstrap-datepicker
 //= require rails-ujs
 //= require turbolinks
-//= require_tree .
